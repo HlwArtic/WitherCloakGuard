@@ -1,0 +1,10 @@
+[
+  {
+    "modid": "wcguard",
+    "name": "Wither Cloak Guard",
+    "description": "Blocks accidental double right-clicks while holding the Wither Cloak Sword.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "authorList": []
+  }
+]
