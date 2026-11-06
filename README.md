@@ -8,8 +8,8 @@ Tired of dying to Blaze Pillars because you accidentally right-clicked twice whi
 
 ## How to use
 1. Install the mod 
-2. Type `/wcguard 1500` in chat. After you activate the ability, right-clicks are ignored for 1500 ms (1.5 s), so you can't cancel it by accident.
-3. The delay time is configurable and can be set from 300 ms to 2000 ms. I recommend 1500 ms.
+2. Type `/wcguard 1200` in chat. After you activate the ability, right-clicks are ignored for 1200 ms (1.2 seconds), so you can't cancel it by accident.
+3. The delay time is configurable and can be set from 50 ms to 2000 ms. I recommend 1200 ms.
 
 **Not working?** Make sure the mod is on with `/wcguard on`.
 
