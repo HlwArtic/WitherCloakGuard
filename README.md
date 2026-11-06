@@ -1,20 +1,13 @@
-# **WITHER CLOAK GUARD**
+# Wither Cloak Guard
 
-Tired of getting killed by Blaze Pillars when you accidentally click your rmb twice while holding Wither Cloak Sword??      
---> this mod fixes exactly this issue.
+Tired of dying to Blaze Pillars because you accidentally right-clicked twice while holding the Wither Cloak Sword? This mod fixes exactly that.
 
-**How To Use:** 
-1. Install the mod
-2. type /wcguard <1500> in your chat
---> it implies that when you enable your ability, you can disable it now only after 1500ms (1.5 seconds)
-3. the time is configurable from 300ms upto 2000ms. (I prefer using 1500ms).
+## How to use
+1. Install the mod 
+2. Type `/wcguard 1500` in chat. After you activate the ability, right-clicks are ignored for 1500 ms (1.5 s), so you can't cancel it by accident.
+3. The delay time is configurable and can be set from 300 ms to 2000 ms. I recommend 1500 ms.
 
-Note: if u think its not working or faulty --> check if the mod is ON by typing /wcguard on
+**Not working?** Make sure the mod is on with `/wcguard on`.
 
-
-*This mod is not bannable*
-How? 
---> It only restricts your input with time constraints rather than providing a custom input/output. 
-(this input approach is already used in NEF and JEF mods (slot locking feature))
-
-avoid using mods that provide you automated movements or tasks, or get banned lmao
+## Note
+The mod only limits your own clicks by timing. It doesn't automate any movement or actions. This approach is already used in QOL features like slot locking / avoid throwing items.
