@@ -1,6 +1,7 @@
 ***WITHER CLOAK GUARD***
 
 Tired of getting killed by Blaze Pillars when you accidentally click your rmb twice while holding Wither Cloak Sword?? 
+
 --> this mod fixes exactly this issue.
 
 **How To Use:** 
@@ -13,6 +14,7 @@ Note: if u think its not working or faulty --> check if the mod is ON by typing 
 
 
 *This mod is not bannable*
+
 How? 
 --> It only restricts your input with time constraints rather than providing a custom input/output. 
 (this input approach is already used in NEF and JEF mods (slot locking feature))
