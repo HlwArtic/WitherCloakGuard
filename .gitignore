@@ -1,5 +1,6 @@
 .gradle/
 build/
 run/
+.DS_Store
 gradle-2.14.1/
 gradle-2.14.1-bin.zip
