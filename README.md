@@ -1,4 +1,4 @@
-"WITHER CLOAK GUARD*
+*WITHER CLOAK GUARD*
 
 Tired of getting killed by Blaze Pillars when you accidentally click your rmb twice while holding Wither Cloak Sword?? 
 --> this mod fixes exactly this issue.
