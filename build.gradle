@@ -1,6 +1,4 @@
-// Same setup as a standard ForgeGradle 2.1 / 1.8.9 project.
-// If you already have a working build.gradle from your Invisible Slimes project,
-// just reuse that one (change version/archivesBaseName/group) and keep your gradle wrapper.
+
 buildscript {
     repositories {
         mavenCentral()
