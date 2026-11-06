@@ -17,16 +17,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-/**
- * Wither Cloak Guard
- *
- * While the Wither Cloak Sword is in your hand, any right click that comes
- * sooner than "delayMs" after your last accepted right click is swallowed
- * on the client, so an accidental double click can't toggle the shield
- * on and straight back off.
- *
- * It only DROPS clicks. It never sends or fakes anything to the server.
- */
+
 @Mod(modid = WitherCloakGuard.MODID,
      name = "Wither Cloak Guard",
      version = WitherCloakGuard.VERSION,
@@ -47,7 +38,7 @@ public class WitherCloakGuard {
     private static volatile int delayMs = 300;
     private static volatile boolean enabled = true;
 
-    // time of the last right click we let through
+    
     private static long lastAccepted = 0L;
 
     @Mod.EventHandler
@@ -72,19 +63,18 @@ public class WitherCloakGuard {
 
     @SubscribeEvent
     public void onMouse(MouseEvent event) {
-        if (!enabled || !event.buttonstate) return; // only care about presses
-
+        if (!enabled || !event.buttonstate) return; 
         Minecraft mc = Minecraft.getMinecraft();
         if (mc.thePlayer == null || mc.currentScreen != null) return;
 
-        // Works with whatever button is bound to "Use Item" (right click by default).
+        
         if (event.button != mc.gameSettings.keyBindUseItem.getKeyCode() + 100) return;
 
         if (!isWitherCloak(mc.thePlayer.getHeldItem())) return;
 
         long now = System.currentTimeMillis();
         if (now - lastAccepted < delayMs) {
-            event.setCanceled(true); // swallow the extra click
+            event.setCanceled(true); 
         } else {
             lastAccepted = now;
         }
@@ -93,14 +83,14 @@ public class WitherCloakGuard {
     private static boolean isWitherCloak(ItemStack stack) {
         if (stack == null) return false;
 
-        // Hypixel-style item id, if the server provides it.
+        
         NBTTagCompound tag = stack.getTagCompound();
         if (tag != null && tag.hasKey("ExtraAttributes", 10)) {
             String id = tag.getCompoundTag("ExtraAttributes").getString("id");
             if ("WITHER_CLOAK_SWORD".equals(id)) return true;
         }
 
-        // Fallback: match on the display name (works with reforges / stars).
+      
         String name = EnumChatFormatting.getTextWithoutFormattingCodes(stack.getDisplayName());
         return name != null && name.contains("Wither Cloak Sword");
     }
@@ -114,9 +104,7 @@ public class WitherCloakGuard {
                 EnumChatFormatting.AQUA + "[WCGuard] " + EnumChatFormatting.RESET + msg));
     }
 
-    /** /wcguard            -> show status
-     *  /wcguard on|off     -> enable / disable
-     *  /wcguard <ms>       -> set the minimum gap between right clicks */
+   
     public static class GuardCommand extends CommandBase {
         @Override
         public String getCommandName() {
