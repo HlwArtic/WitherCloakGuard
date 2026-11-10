@@ -13,5 +13,8 @@ Tired of dying to Blaze Pillars because you accidentally right-clicked twice whi
 
 **Not working?** Make sure the mod is on with `/wcguard on`.
 
+## Download 
+[Click Here](https://github.com/HlwArtic/WitherCloakGuard/releases/download/WitherCloakGuard/WitherCloakGuard.jar)
+
 ## Note
 The mod only limits your own clicks by timing. It doesn't automate any movement or actions. This approach is already used in QOL features like slot locking / avoid throwing items.
